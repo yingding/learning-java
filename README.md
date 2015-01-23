@@ -1,4 +1,4 @@
 learning-java
 =============
 
-these codes help people to start learning java easily
+These codes help people to start learning java easily
