@@ -1,12 +1,12 @@
 package effective.parsing.string;
 
 //import org.junit.Assert;
-import java.util.Arrays;
+//import java.util.Arrays;
 import org.junit.Test;
 
 public class performanceTestColorParser {
     /**
-     * running time 0.007 s, this one has a less optimal performance
+     * running time 0.006 s, this one has a less optimal performance
      * due to the string copy
      */
     @Test
@@ -20,8 +20,9 @@ public class performanceTestColorParser {
         }      
     }
     /**
-     * running time 0.002 s
-     * this one has a better performance due to the bitshift and mod operation
+     * running time 0.001 s
+     * this one has a better performance due to the efficiency of 
+     * bit SHIFT and bit AND operations
      */
     @Test
     public void testShiftImpl() {
