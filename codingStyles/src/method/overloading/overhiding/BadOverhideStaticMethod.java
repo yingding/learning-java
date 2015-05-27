@@ -12,6 +12,8 @@ public class BadOverhideStaticMethod {
      */
     public static void main(String[] args) {
         Utility uObject = new Utility();
+        // this is a bad way to call static method,
+        // using Class.staticMethod() is a better approach. 
         uObject.myStaticMethod();
         UtilityExtended uObjExtended = new UtilityExtended();
         uObjExtended.myStaticMethod();
@@ -53,5 +55,4 @@ public class BadOverhideStaticMethod {
             System.out.println("overridden extended");
         }
     }
-
 }
