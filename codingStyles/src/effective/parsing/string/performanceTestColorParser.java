@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class performanceTestColorParser {
     /**
-     * running time 0.095 s, this one has a less optimal performance
+     * running time 0.007 s, this one has a less optimal performance
      * due to the string copy
      */
     @Test
@@ -20,7 +20,7 @@ public class performanceTestColorParser {
         }      
     }
     /**
-     * running time 0.033 s
+     * running time 0.002 s
      * this one has a better performance due to the bitshift and mod operation
      */
     @Test
