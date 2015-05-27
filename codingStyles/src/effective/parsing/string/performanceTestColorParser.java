@@ -5,7 +5,10 @@ import java.util.Arrays;
 import org.junit.Test;
 
 public class performanceTestColorParser {
-
+    /**
+     * running time 0.095 s, this one has a less optimal performance
+     * due to the string copy
+     */
     @Test
     public void testSubstringImpl() {        
         String colorString = "27AB49";//RGB Color Codes
@@ -14,8 +17,12 @@ public class performanceTestColorParser {
             System.out.println(
                 Arrays.toString(EffectiveColorParser.str2IntRGBWithSubString(colorString)));
         }
+        
     }
-    
+    /**
+     * running time 0.033 s
+     * this one has a better performance due to the bitshift and mod operation
+     */
     @Test
     public void testShiftImpl() {
         String colorString = "27AB49"; //RGB Color Codes
