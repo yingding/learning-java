@@ -14,10 +14,10 @@ public class performanceTestColorParser {
         String colorString = "27AB49";//RGB Color Codes
         int upperBound = 1000;
         for (int i = 0; i < upperBound; i++) {
-            System.out.println(
-                Arrays.toString(EffectiveColorParser.str2IntRGBWithSubString(colorString)));
-        }
-        
+            //System.out.println(Arrays.toString(
+                    EffectiveColorParser.str2IntRGBWithSubString(colorString);
+            //        ));
+        }      
     }
     /**
      * running time 0.033 s
@@ -28,8 +28,9 @@ public class performanceTestColorParser {
         String colorString = "27AB49"; //RGB Color Codes
         int upperBound = 1000;
         for (int i = 0; i < upperBound; i++) {
-            System.out.println(
-                Arrays.toString(EffectiveColorParser.str2IntRGBWithBitshift(colorString)));
+            //System.out.println(Arrays.toString(
+                EffectiveColorParser.str2IntRGBWithBitshift(colorString);
+            //    ));
         }
     }
 }
