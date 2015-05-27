@@ -10,7 +10,7 @@ public class EffectiveColorParser {
         System.out.println(Arrays.toString(str2IntRGBWithBitshift(colorString)));
     }
     
-    private static int[] str2IntRGBWithSubString(String rgbColorString) {
+    public static int[] str2IntRGBWithSubString(String rgbColorString) {
         int[] colorCodes = new int[3];
         String subString;
         for (int i = 0; i < 3; i++) {
@@ -20,10 +20,10 @@ public class EffectiveColorParser {
         return colorCodes;
     }
     
-    private static int[] str2IntRGBWithBitshift(String rgbColorString) {
+    public static int[] str2IntRGBWithBitshift(String rgbColorString) {
         int[] colorCodes = new int[3]; 
         int totalCodes = Integer.parseInt(rgbColorString, 16); 
-        System.out.println(totalCodes);
+        //System.out.println(totalCodes);
         for (int i = 0; i<3; i++) {
             colorCodes[i] = subHexaInt(totalCodes, i);
         }
